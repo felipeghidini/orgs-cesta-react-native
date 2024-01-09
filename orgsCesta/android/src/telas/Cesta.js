@@ -1,7 +1,7 @@
 import React from 'react';
 import { Image, StyleSheet, Dimensions, Text, View } from 'react-native';
-import topo from '../../../assets/topo.png';
-import logo from '../../../assets/logo.png';
+import topo from '../../../src/assets/topo.png';
+import logo from '../../../src/assets/logo.png';
 
 const widthScreen = Dimensions.get('screen').width;
 
@@ -24,7 +24,7 @@ function Cesta() {
 const styles = StyleSheet.create({
   topo: {
     width: '100%',
-    height: 578 / 768 * widthScreen
+    height: 578 / 768 * widthScreen,
   },
   titulo: {
     width: '100%',
@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
     fontSize: 26,
     lineHeight: 42,
     color: '#464646',
-    fontWeight: 'bold'
+    fontFamily: 'Montserrat-Bold',
   },
   fazenda: {
     flexDirection: 'row',
@@ -57,7 +57,8 @@ const styles = StyleSheet.create({
   nomeFazenda: {
     fontSize: 16,
     lineHeight: 26,
-    marginLeft: 12
+    marginLeft: 12,
+    fontFamily: 'Montserrat-Regular',
   },
   descricao: {
     color: '#A3A3A3',
